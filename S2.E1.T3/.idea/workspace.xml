@@ -11,7 +11,22 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4110dd-cc6e-4f64-a5cb-1759feea6251" name="Default Changelist" comment="" />
+    <list default="true" id="6a4110dd-cc6e-4f64-a5cb-1759feea6251" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../S2.E2.T123/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T1/cmake-build-debug/CMakeFiles/S2_E1_T1.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T1/cmake-build-debug/CMakeFiles/S2_E1_T1.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T1/cmake-build-debug/CMakeFiles/S2_E1_T1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T1/cmake-build-debug/CMakeFiles/S2_E1_T1.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T1/cmake-build-debug/S2_E1_T1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T1/cmake-build-debug/S2_E1_T1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T2/cmake-build-debug/CMakeFiles/S2_E1_T2.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T2/cmake-build-debug/CMakeFiles/S2_E1_T2.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T2/cmake-build-debug/CMakeFiles/S2_E1_T2.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T2/cmake-build-debug/CMakeFiles/S2_E1_T2.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T2/cmake-build-debug/S2_E1_T2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T2/cmake-build-debug/S2_E1_T2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T2/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T2/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/S2_E1_T3.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/S2_E1_T3.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/S2_E1_T3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/S2_E1_T3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../S2.E1.T4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../S2.E1.T4/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +36,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1YEuODyVdbAu7J4JxhxVnYjBDjQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,6 +68,7 @@
       <updated>1582520040540</updated>
       <workItem from="1582520042195" duration="2137000" />
       <workItem from="1582573149327" duration="1539000" />
+      <workItem from="1582619582763" duration="540000" />
     </task>
     <servers />
   </component>
@@ -65,22 +84,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582521156911" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1582525816994">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1582620134278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582525816994" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1582525816994">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582620134278" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1582620134278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582525816994" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1582525816994">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582620134278" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1582620134278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582525816994" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1582525816994">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582620134278" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1582620134278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582525816994" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582620134278" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1582573191914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

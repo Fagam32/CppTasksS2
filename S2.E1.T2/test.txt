@@ -4,8 +4,7 @@ int function1(int intVar, double var, char** asd) {
     return 15;
 }
 
-int function1(int intVar, double var, char** asd)
-{
+int function1(int intVar, double var, char** asd){
     int a;
     char** b;
     return 15;

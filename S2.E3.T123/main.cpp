@@ -32,7 +32,6 @@ int main() {
                 break;
         }
     }
-    return 0;
 }
 
 // Delete all same integers in sorted array
@@ -94,12 +93,12 @@ void task2() {
 void task3() {
     srand(time(nullptr));
     int array[20];
-    int bigRandomNumber = rand() % 1000; // ATTENTION: CAN BE PRIME)
+    int bigRandomNumber = rand() % 10; // ATTENTION: CAN BE PRIME)
     cout << "BigRandomNumber: " << bigRandomNumber << endl;
     for (int i = 0; i < 10; i++) {
         while (true) {
-            int tmp = rand() % (bigRandomNumber / 2);
-            if (bigRandomNumber % tmp == 0) {
+            int tmp = rand() % (bigRandomNumber / 2) + 1;
+            if ((bigRandomNumber % tmp) == 0) {
                 array[i] = tmp;
                 array[19 - i] = bigRandomNumber / tmp;
                 break;

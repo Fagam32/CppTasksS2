@@ -1,4 +1,6 @@
 #include <iostream>
+#include <set>
+#include <fstream>
 #include <ctime>
 
 using namespace std;
@@ -12,6 +14,8 @@ void task3();
 void task4();
 
 void solve(int n, int sum1, int sum2);
+
+bool nextSet(int *a, int n, int k);
 
 int main() {
     int q;
@@ -131,5 +135,130 @@ void solve(int n, int sum1, int sum2) {
 
 // Didn't understand the task :( Where's to take vocabulary?
 void task4() {
+    set<string> vocabulary;
+    string line;
+    char alphabet[] = {
+            'a', 'b', 'c', 'd', 'e',
+            'f', 'g', 'h', 'i', 'j',
+            'k', 'l', 'm', 'n', 'o',
+            'p', 'q', 'r', 's', 't',
+            'u', 'v', 'w', 'x', 'y',
+            'z'
+    };
+    int numberOfchars[] = {10, 3, 5, 3, 5,
+                           9, 2, 2, 8, 4,
+                           6, 4, 5, 8, 10,
+                           6, 6, 6, 5, 3,
+                           1, 2, 1, 2, 1,
+                           1};
+    int costs[] = {1, 3, 2, 3, 2,
+                   1, 5, 5, 1, 2,
+                   2, 2, 2, 1, 1,
+                   2, 2, 2, 2, 3,
+                   10, 5, 10, 5, 10,
+                   10};
 
+
+    ifstream file(R"(C:\Users\ilya1\CLionProjects\S2.E5.T4\vocabulary.txt)");
+
+    while (getline(file, line)) {
+        vocabulary.insert(line);
+    }
+    file.close();
+
+    //Getting letters
+    srand(time(nullptr));
+
+    char chosenLetters[8];
+
+    for (int i = 0; i < 8; i++) {
+        int random = rand() % 26;
+        if (numberOfchars[random] > 0) {
+            chosenLetters[i] = alphabet[random];
+            numberOfchars[random]--;
+            cout << chosenLetters[i] << " ";
+        } else
+            i--;
+    }
+    cout << endl;
+
+    set<string> setOfWords;
+    int maxWeight = -1;
+    string answerWord;
+    //generate all words from letters
+    int setOfNumber[8];
+    for (int wordLength = 8; wordLength > 0; wordLength--) {
+
+        for (int i = 0; i < wordLength; i++)
+            setOfNumber[i] = i + 1;
+
+        setOfWords.clear();
+
+        do {
+            //convert numbers into word
+            string q;
+            for (int i = 0; i < wordLength; i++) {
+                q.push_back(chosenLetters[setOfNumber[i] - 1]);
+            }
+            setOfWords.insert(q);
+        } while (nextSet(setOfNumber, 8, wordLength));
+
+        for (string item : setOfWords) {
+            if (vocabulary.find(item) == vocabulary.end()) { //if not found
+                continue;
+            } else {
+                //weight of found word
+                int curWeight = 0;
+                for (int i = 0; i < wordLength; i++) {
+                    char c = item.at(i);
+                    int q = 0;
+                    for (; q < 26; q++) {
+                        if (alphabet[q] == c)
+                            break;
+                    }
+                    curWeight += costs[q];
+                }
+
+                if (curWeight > maxWeight) {
+                    maxWeight = curWeight;
+                    answerWord = item;
+                }
+            }
+        }
+    }
+    cout << answerWord << " " << maxWeight << endl;
+}
+
+bool nextSet(int *a, int n, int k) {
+    int edge, j, i, tmp;
+    edge = k - 1;
+
+    j = k;
+    while ((j < n) && (a[edge] >= a[j])) ++j;
+
+    if (j < n) {
+
+        tmp = a[edge], a[edge] = a[j], a[j] = tmp;
+    } else {
+
+        for (i = k, j = n - 1; i < j; i++, j--) {
+            tmp = a[i], a[i] = a[j], a[j] = tmp;
+        }
+
+        i = edge - 1;
+
+        while (i >= 0 && a[i] >= a[i + 1]) --i;
+        if (i < 0) return false;
+
+        j = n - 1;
+
+        while (j > i && a[i] >= a[j]) --j;
+
+        tmp = a[i], a[i] = a[j], a[j] = tmp;
+
+        for (i = i + 1, j = n - 1; i < j; i++, j--) {
+            tmp = a[i], a[i] = a[j], a[j] = tmp;
+        }
+    }
+    return true;
 }
